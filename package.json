@@ -1,0 +1,48 @@
+{
+  "name": "dsh-lan-loopback-compat",
+  "version": "0.1.0",
+  "description": "Treat connections that arrive through a LAN proxy as loopback, so a DeepSeek Harness instance reached over a LAN/tunnel keeps its browser connection working.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jipika/dsh-lan-loopback-compat.git"
+  },
+  "homepage": "https://github.com/jipika/dsh-lan-loopback-compat#readme",
+  "bugs": {
+    "url": "https://github.com/jipika/dsh-lan-loopback-compat/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "lan",
+    "loopback",
+    "connection",
+    "compat",
+    "proxy"
+  ],
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-connection"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "private": true
+}
