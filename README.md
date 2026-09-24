@@ -32,7 +32,13 @@ globalThis.__DSH_LAN_COMPAT_PLUGIN__ = true;
 
 ## 安装
 
+两种装法任选其一（都会往 profile 的 `dependencies` 加一项，再配一行 insert）：
+
 ```bash
+# ① npm（快，走 registry）
+dsh plugin --profile <profile> add dsh-lan-loopback-compat
+
+# ② GitHub（源码直装，跟随 main 分支）
 dsh plugin --profile <profile> add github:jipika/dsh-lan-loopback-compat
 ```
 
