@@ -7,6 +7,10 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
+> **拥有**：浏览器侧连接判定：把经 LAN 代理到达的连接当作 loopback。
+> **冲突时**：无同类竞争者；改的是 `dsh-client-connection` 的判定，不动 host。
+> **回滚**：删 `dsh-lan-loopback-compat` insert + 重启应用。
+
 ---
 
 ## 它解决什么
