@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/icon.svg" width="72" alt="dsh-lan-loopback-compat icon">
+</div>
+
 # dsh-lan-loopback-compat
 
 > Treat connections that arrive through a LAN proxy as loopback, so a DeepSeek Harness
